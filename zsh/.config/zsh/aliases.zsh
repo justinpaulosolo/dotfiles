@@ -1,3 +1,5 @@
+alias ta='tmux attach -t'
+
 alias l='exa -lah'
 alias ls=exa
 alias sl=exa
