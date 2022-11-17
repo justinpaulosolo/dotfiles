@@ -1,3 +1,7 @@
+local function empty()
+  return [[ ]]
+end
+
 require("lualine").setup({
   options = {
     theme = "catppuccin",
@@ -5,11 +9,15 @@ require("lualine").setup({
     section_separators = { left = "", right = "" },
   },
   sections = {
-    lualine_a = { "mode" },
-    lualine_b = { "branch", "diagnostics" },
-    lualine_c = { "filename" },
+    lualine_a = {},
+    lualine_b = { { "branch", icon = "" } },
+    lualine_c = {
+      "filename",
+      { "diff", symbols = { added = " ", modified = "柳 ", removed = " " } },
+      "diagnostics",
+    },
     lualine_x = {},
-    lualine_y = {},
-    lualine_z = { "location" },
+    lualine_y = { "filetype" },
+    lualine_z = { { empty, padding = -1 } },
   },
 })
