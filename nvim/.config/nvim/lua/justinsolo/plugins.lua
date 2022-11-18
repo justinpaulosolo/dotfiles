@@ -11,9 +11,13 @@ return require("packer").startup(function(use)
   use("folke/tokyonight.nvim")
   use("rose-pine/neovim")
   use("catppuccin/nvim")
+  use("rebelot/kanagawa.nvim")
 
   -- Statusline
   use("nvim-lualine/lualine.nvim")
+
+  -- Git
+  use("lewis6991/gitsigns.nvim")
 
   -- Telescope
   use({
@@ -52,4 +56,5 @@ return require("packer").startup(function(use)
   use("windwp/nvim-autopairs")
   use("windwp/nvim-ts-autotag")
   use("nvim-tree/nvim-tree.lua")
+  use("folke/trouble.nvim")
 end)

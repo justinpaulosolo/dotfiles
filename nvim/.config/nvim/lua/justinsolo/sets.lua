@@ -1,4 +1,3 @@
-vim.opt.cmdheight = 1
 vim.opt.syntax = "yes"
 vim.opt.backup = false
 vim.opt.swapfile = false
@@ -17,3 +16,4 @@ vim.opt.smartindent = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.updatetime = 50
+vim.opt.signcolumn = "yes"
