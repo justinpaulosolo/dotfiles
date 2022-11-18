@@ -14,7 +14,6 @@ return require("packer").startup(function(use)
 
   -- Statusline
   use("nvim-lualine/lualine.nvim")
-  use("romgrk/barbar.nvim")
 
   -- Telescope
   use({
