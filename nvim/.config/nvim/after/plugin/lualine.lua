@@ -12,7 +12,6 @@ require("lualine").setup({
     lualine_a = {},
     lualine_b = { { "branch", icon = "" } },
     lualine_c = {
-      "filename",
       { "diff", symbols = { added = " ", modified = "柳 ", removed = " " } },
       "diagnostics",
     },
