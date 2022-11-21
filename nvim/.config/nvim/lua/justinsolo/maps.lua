@@ -13,3 +13,6 @@ keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>ft", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>fb", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>`", ":terminal<CR>", opts)
+
+--Lazygit
+keymap("n", "<leader>gt", ":FloatermNew lazygit<CR>", opts)
